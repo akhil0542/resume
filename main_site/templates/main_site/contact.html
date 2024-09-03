@@ -1,0 +1,69 @@
+{% extends "main_site/base.html" %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+{% block content %}
+<h1 class="text-warning mt-5 border-bottom border-light">CONTACT US</h1>
+<div class="cotainer text-white mt-5">
+    <div class="marquee-container">
+        <p class="marquee text-center mb-5 fw-medium text-info">If you have any questions about my skills, experience, or how we might collaborate, 
+            feel free to reach out using the contact form below. I'm here to provide the information you need and explore 
+            how we can work together to achieve your goals...!!
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-sm-9 px-3">
+            <form class="row g-3">
+                <div class="col-sm-6 px-3">
+                  <label for="inputName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-sm-6 px-3">
+                  <label for="inputEmail" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="inputEmail" required>
+                </div>
+                <div class="col-sm-12 px-3">
+                  <label for="inputSubject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="inputSubject" placeholder="Enter Your Subject">
+                </div>
+                <div class="col-sm-12 px-3">
+                  <label for="inputMessage" class="form-label">Message *</label>
+                  <textarea class="form-control" id="inputMessage"  placeholder="Enter Your Message" required></textarea>
+                </div>
+                <div class="col-sm-12 px-3">
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </form>
+        </div>
+        <div class="col-sm-3 text-center px-3">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fa-solid fa-location-dot fa-3x i-color"></i>
+                    <p>Varanasi, Uttar Pradesh 221206, India</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-book fa-3x i-color"></i>
+                    <p>+91-8853587218</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope fa-3x i-color"></i>
+                    <p>akhilesh7218@gmail.com</p>
+                </li>
+              </ul>
+        </div>
+    </div>
+</div>
+<div class="text-center mt-5">
+    <a href="#" target="_blank">
+        <i class="fa-brands fa-twitter fa-2x me-4 i-color"></i>
+    </a>
+    <a href="#" target="_blank">
+        <i class="fa-brands fa-facebook fa-2x me-4 i-color"></i>
+    </a>
+    <a href="#" target="_blank">
+        <i class="fa-brands fa-instagram fa-2x me-4 i-color"></i>
+    </a>
+    <a href="#" target="_blank">
+        <i class="fa-brands fa-linkedin fa-2x i-color"></i>
+    </a>
+</div>
+{% endblock content %}

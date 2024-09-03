@@ -1,0 +1,27 @@
+{% extends "main_site/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="text-center">
+    <img src="{% static 'main_site/images/profile.png' %}" class="img-thumbnail mt-5" alt="profile" width="200px" height="200px">
+</div>
+<div class="text-white px-5 lh-lg" style="text-align: justify;">
+    <h1 class="fw-bold mt-5 satisfy-regular">Hello,</h1>
+        <p style="text-indent: 100px;">I am <strong class="text-warning">Akhilesh Kumar Singh</strong> a dedicated software developer with over 1 years 
+            of experience in creating and refining software solutions. I hold a degree in B.Tech from SHEAT College of Engineering, 
+            where I developed a strong foundation in computer science and programming principles.
+        </p>
+        <p>Throughout my career, I’ve successfully led projects such as developing a high-impact e-commerce platform that increased 
+            client revenue by 30% and optimizing data processing applications to cut processing time by 50%. 
+            My expertise spans both front-end and back-end development, and I’m adept at using modern tools and frameworks.
+        </p>
+        <p>I’m passionate about problem-solving and thrive in collaborative environments. Known for my strong work ethic and 
+            commitment to continuous learning, I strive to deliver effective and innovative solutions that drive project 
+            success and exceed expectations.
+        </p>
+</div>
+<div class="text-center py-3">
+    <a class="btn btn-outline-warning me-3" href="{% url "contact" %}" role="button">Hire Me</a>
+    <a class="btn btn-outline-info" href="{% url "contact" %}" role="button">Contact</a>
+</div>
+{% endblock content %}

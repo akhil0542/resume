@@ -1,0 +1,14 @@
+{% load static %}
+<div class="border-end border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'main_site/images/profile.png' %}" class="img-fluid rounded-circle mt-5" alt="profile" width="150px" height="150px">
+    </div>
+    <h4 class="text-center text-white mt-3 satisfy-regular">Akhilesh Singh</h4>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a class="nav-link {{home}}" aria-current="page" href="{% url "home" %}">Home</a>
+        <a class="nav-link {{services}}" href="{% url "services" %}">Services</a>
+        <a class="nav-link {{skills}}" href="{% url "skills" %}">Skills</a>
+        <a class="nav-link {{contact}}" href="{% url "contact" %}">Contact</a>
+    </nav>
+</div>
