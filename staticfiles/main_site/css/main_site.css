@@ -1,0 +1,58 @@
+/* Font */
+.satisfy-regular{
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body{
+  height: 100%;
+}
+
+/* Service Icon color */
+.i-color{
+  color: chartreuse;
+}
+
+/* Service subtitle text color */
+.ss-color{
+  color:whitesmoke;
+}
+
+/* Link style */
+a.nav-link{
+  color: white;
+}
+a.nav-link:hover{
+  color: blue;
+  transform: translateY(-2px);
+  background-color: lightblue;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+a.nav-link.active{
+  color: black; 
+  font-weight: bold;
+  background-color: goldenrod;
+  border-radius: 3px;
+  transform: translateY(0);
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
